@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+
+/* App Section */
+
+.app h1{
+    color : white;    
+}
+
+/* Header Section */
+
+.header{
+    height:149px;
+    margin :12px;
+    background-color:#F9F7F2;
+    display:flex;
+    justify-content : center;
+    border-radius : 15px;
+    align-items: center;
+}
+
+.logo{
+    height :70px;
+    display:flex;
+    justify-content : center;
+    align-items: center; 
+}
+
+.logo h1{
+    margin : 0;
+    color:black;
+    font-size : 68px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing : 4px;
+}
+
+/* Body Section */
+
+.body{
+    margin:0;
+    padding:0;
+    display:flex;
+}
+
+/* Left Section */
+
+.left-portion{
+    margin : 0px 0px 0px 12px;
+    background-color:#F9F7F2;
+    height : 615px;
+    width:827px;
+    border-radius : 15px;
+}
+
+.left-portion h1{
+    margin : 0;
+}
+
+.left-heading{
+    width:710px;
+    margin : 40px 30px 0px 30px;
+    display :flex;
+    justify-content: space-between;
+}
+
+.left-heading h1{
+    font-family: "Belanosima", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    display :flex;
+    justify-content: start;
+    color:black;
+}
+
+.left-heading button {
+    font-family: "Belanosima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color:#F9F7F2;
+    border-radius: 10px;
+    border : 1px solid black;
+}
+
+.clearAll-btn{
+    cursor : pointer;
+}
+
+.clearAll-btn span {
+    margin-right:5px;
+    
+}
+
+/* Todos Section */
+
+.todos-wrapper{
+    width:780px;
+    margin: 40px 0px 0px 5px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.todo{
+    height:60px;
+    width:690px;
+    margin-bottom: 9px;
+    border : 2px solid black;
+    border-radius: 10px;
+    display:flex;
+    background-color:white;
+    transition: background-color 0.4s ease;
+    justify-content:space-between;
+}
+
+.todo p{
+    font-family: "Belanosima", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size:22px;
+}
+
+.todo-left{
+    margin-left:40px;
+    display:flex;
+    align-items:center;
+}
+
+.noTodosMsg{
+    height:150px;
+    width:690px;
+    margin-bottom: 9px;
+    border : 1px dotted black;
+    border-radius: 10px;
+    align-items:center;
+    display:flex;
+    justify-content:center;
+}
+
+.noTodosMsg h1{
+    color:black;
+    font-family: "Inder", sans-serif;
+    font-weight: 200;
+    font-size:17px;
+    font-style: normal;
+}
+
+
+/* Checkbox section */
+
+.custom-checkbox {
+    display: none; /* Hide the real checkbox */
+}
+
+.custom-label {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px; /* Add some spacing between checkbox and text */
+    position: relative;
+}
+
+.unchecked {
+    display: block;
+}
+
+.checked {
+    display: none;
+}
+
+.custom-checkbox:checked + .custom-label .unchecked {
+    display: none;
+}
+
+.custom-checkbox:checked + .custom-label .checked {
+    display: block;
+}
+
+.todo.completed {
+    background-color : #DCDCDC;
+    transition: background-color 0.4s ease;
+}
+
+.editInput{
+    margin-left:20px;
+    height:20px;
+}
+
+.todo-right{
+    display:flex;
+    align-items:center
+}
+
+.todo-right button {
+    background: none; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer;
+    margin-right:30px;
+    font-size: 24px; 
+    display: flex;
+    align-items: center;
+}
+
+.todo i{
+    font-size:24px;
+}
+
+.todo-left p{
+    margin-left:25px;
+}
+
+
+/* Right Section */
+
+.right-portion{
+    margin : 0px 0px 0px 5px;
+    background-color:#F9F7F2;
+    height : 615px;
+    width:568px;
+    border-radius : 15px;
+}
+
+.right-heading{
+    display:flex;
+    justify-content:center;
+    width:490px;
+    margin : 40px 0px 0px 40px;
+}
+
+.right-heading h1{
+    color:black;
+    font-family: "Belanosima", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.input-area{
+    width:490px;
+    margin : 40px 0px 0px 40px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.input-area input{
+    width:490px;
+    height:83px;
+    margin-bottom:21px;
+    background-color:#F9F7F2;
+    border: 1px solid #C0C0C0;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.input-area input::placeholder {
+    color: black;
+    opacity: 1;
+    text-align: center;
+}
+
+.input-area button{
+    width:490px;
+    height:60px;
+    border-radius:75px;
+    background-color:black;
+    font-family: "Inder", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+    font-size:14px;
+    cursor:pointer;
+}
